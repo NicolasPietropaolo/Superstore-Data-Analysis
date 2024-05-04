@@ -1,0 +1,26 @@
+SELECT* 
+FROM superstore
+LIMIT 5; 
+-- Print first 5 rows of superstore table only --
+
+
+SELECT price, item_name
+
+FROM superstore
+ORDER BY price;
+
+-- SELECT price and item_name columns from superstore table and order by asc order of price --
+SELECT AVG(price)
+FROM superstore;
+-- Calculate avg price of items in superstore table --
+
+SELECT AVG(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+-- SELECT price and category table and find avg price of Kitchen Supplies category items --
+
+SELECT AVG(average_rating), category
+FROM superstore
+WHERE category = "Electronics";
+-- Calculated the average rating for Electronics category items --
+
